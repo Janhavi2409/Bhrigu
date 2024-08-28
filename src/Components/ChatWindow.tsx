@@ -39,7 +39,7 @@ const ChatWindow: React.FC = () => {
 
   const fetchAIResponse = async (userInput: string) => {
   try {
-    const response = await fetch('https://conversely-humorous-aphid.ngrok-free.app/api/bhrigu/invoke', {
+    const response = await fetch('/api/bhrigu/invoke', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
