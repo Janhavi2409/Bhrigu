@@ -75,7 +75,7 @@ const Register = () => {
     }
     if (!hasError) {
       try {
-        const response = await fetch('https://conversely-humorous-aphid.ngrok-free.app/register', {
+        const response = await fetch('/register', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ username, password, phone }),
